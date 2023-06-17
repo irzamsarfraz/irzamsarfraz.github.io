@@ -1,7 +1,237 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <title>MiCA: An extended tool for microarray gene expression analysis</title>
+  <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="style/accordian.pack.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+</head>
+
+<body onload="new Accordian('basic-accordian',5,'header_highlight');">
+  <div id="logo"><h1>MiCA</h1></div>
+  <div id="basic-accordian" >
+    <div id="test-header" class="accordion_headings header_highlight">Home</div>
+    <div id="test-content">
+      <div class="accordion_child">
+        <h1>Microarray Analysis Tool</h1>
+        <p>MiCA is a fully integrated, interactive and streamlined Windows desktop-based environment for microarray gene expression analysis.
+        Typical tasks of gene expression analysis such as data fetching, editing/grouping, data pre-processing and differential gene expression are all implemented in an interactive and easy to use interface. A complete list of features currently available with the latest version of
+        MiCA can be viewed at the features tab.</p>
+        <ul>
+          <li>Latest Version: 1.12 (Updated 10/03/2020)</li>
+        </ul>
+		<h2>Screenshots</h2>
+    <a href="style/screen1.jpg"><img src="style/screen1s.jpg" alt="screenshot 1" /></a>
+    <a href="style/screen2.jpg"><img src="style/screen2s.jpg" alt="screenshot 2" /></a>
+    <a href="style/screen3.jpg"><img src="style/screen3s.jpg" alt="screenshot 3" /></a>
+    <a href="style/screen4.jpg"><img src="style/screen4s.jpg" alt="screenshot 4" /></a>
+    <a href="style/screen5.jpg"><img src="style/screen5s.jpg" alt="screenshot 5" /></a>
+    <a href="style/screen6.jpg"><img src="style/screen6s.jpg" alt="screenshot 6" /></a>
+	
+	
+			<h2>Versions</h2>
+		<h4>1.12</h4>
+        <ul>
+          <li>Fixed some bugs that caused the application to crash</li>
+          <li>Updated the installer that now includes R 3.4.4, Rtools35 and all required libraries in one package</li>
+		 
+        </ul>
+
+		<h4>1.1</h4>
+        <ul>
+          <li>Added limited support for Illumina microarray chips</li>
+          <li>Added ROBPCA</li>
+		  <li>Added mean-centring, ratio-a and ratio-g batch-effect correction methods</li>
+		  
+
+        </ul>
+        
+		<h4>1.0</h4>
+        <ul>
+          <li>Fixed UI elements</li>
+		            <li>Added GSVA</li>
+          <li>Updated gene set manager for use by GSVA</li>
+          <li>Added support for KEGG gene sets</li>
+          <li>Added heatmap for GSVA</li>
+
+        </ul>
+		<h4>0.9 (beta)</h4>
+        <ul>
+          <li>Intial release</li>
+        </ul>
+        
+        <h2>Known Issues:</h2>
+        <ul>
+                    <li>ROBPCA crashes when no attribute column is selected</li>
+                                        <li>Outlier removal does not find batches for adjustment if corrected for batch-effect before removal</li>
+                                        <li>BGX manifest file support needed for Illumina datasets</li>
+
+
+		            
+
+        </ul>
+        
+        <h2>How to install MiCA?</h2>
+        <ul>
+<li>Download MiCA_1_1_2_setup.exe and install</li>
+<li>Launch MiCA from desktop shortcut</li>
+<li><b>NOTE: Always run installer and application as administrator</b></li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3T2q-XxwYww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="test1-header" class="accordion_headings">Features</div>
+    <div id="test1-content">
+      <div class="accordion_child">
+<p>The set of features offered by MiCA eliminates the need to use any external input or application as all major tasks of microarray
+gene expression analysis can be accomplished from within the application.</p>
+<ul>
+  <li>Project Management with the separate directories</li>
+  <li>Browse GEO datasets by searching for appropriate terms</li>
+  <li>View characteristics for each GEO browser search result</li>
+  <li>Fetch phenotype data through GEO browser or directly by specifying a GEO series accession identifier</li>
+  <li>Fetch raw gene expression data</li>
+  <li>Edit phenotype data using advanced editor that allows grouping, comparisons, character removal and creation
+  of new attributes</li>
+  <li>Change attribute datatypes</li>
+  <li>Support for BrainArray custom CDF</li>
+  <li>Support for rma, gcrma, mas5, dchip & plier normalization methods with parameter customization</li>
+  <li>Support for batch-effect removal using combat, mean-centring, ratio-a and ratio-g</li>
+  <li>Store normalized expression sets to local storage for faster access during multiple startups</li>
+  <li>Widget to select active normalized expression set</li>
+  <li>Visualize data using interactive frequency histograms, intensity histograms, boxplots, PCA, ROBPCA, ma-plot, microarray pictures
+  RLE and NUSE plots</li>
+  <li>Identify and remove outlier with a single click through interactive visualizations</li>
+<li>Differential gene expression using multiple processing models</li>
+<li>Highly customizable linear models with support for confounding factors, interaction terms and surrogate variables
+</li>
+<li>Generalized linear models with support for confounding factors and surrogate variables</li>
+<li>Implementation of LIMMA to provide quick differential expression results</li>
+<li>Use surrogate variable analysis to capture un-indentified variation in the dataset (using manually specified
+number of surrogate variables or automatically selecting the significant variables)</li>
+<li>Support for Significance Analysis of Microarrays (SAM) for differential expression</li>
+<li>Support for gene set enrichment analysis using GSVA (visualize gene sets using heatmaps)</li>
+<li>Gene set manager to fetch KEGG gene sets or create/import custom gene sets</li>
+<li>Visualize results using differential gene lists, interactive heatmaps and class-based boxplots</li>
+<li>Compare gene lists from different studies</li>
+<li>Generate comprehensive PDF report</li>
+<li>Widget to view current CPU and memory usage</li>
+</ul>
+      </div>
+    </div>
+	
+    <div id="test2-header" class="accordion_headings">Contributors</div>
+    <div id="test2-content">
+      <div class="accordion_child">
+         <table style="width:100%; border-spacing:0;">
+          <tr><th>Irzam Sarfraz</th><th>Department of Computer Science (National Textile University)</th></tr>
+          <tr><td style="width:30%">		
+</td><td>Irzam Sarfraz completed his Bachelors in Computer Science from National Textile University in 2018 with special emphasis
+on the development of tools for Bioinformatics. He worked as a research intern at the Computational Genomics
+group at Lahore University of Management Sciences from 2017 to 2018. His responsibilities included research
+across experimental conditions through analysis on high-throughput gene expression data and development of tools that allow quick and
+easy analysis on such data.</td></tr>
+                    <tr><th>Dr. Muhammad Asif</th><th>
+                        Associate Professor/Chairman, 
+                        Department of Computer Science (National Textile University)</th></tr>
+          <tr><td style="width:30%">		
+</td><td>Muhammad Asif is Chairman at Department of Computer Science at National Textile University, Faisalabad. Before this, he was a research scholar in Computer Science and Information Management Department at Asian Institute of Technology, Thailand and received his MS and Ph.D. from AIT in 2009 and 2012 respectively on HEC foreign Scholarship. During the course of time, he was a visiting researcher at National Institute of Information Tokyo, Japan. He has worked on some projects including Air Traffic Control System of Pakistan Air force.
+</br></br>
+Currently, he is Associate Editor of a prestigious journal IEEEAccess having an Impact factor of 3.557. He is serving as a reviewer of a number of reputed journals and also authored a number of research papers in reputed journals and conferences. He is also a permanent member of Punjab Public Service Commission (PPSC) as an advisor and program evaluator at National Computing Education Accreditation Council (NCEAC) Islamabad.</td></tr>
+		                      <tr><th>Dr. Kahkeshan Hijazi</th><th>Research Scientist, Section of Computational Bio-Medicine (Boston University Medical Center)</th></tr>
+          <tr><td style="width:30%">		
+</td><td>Dr. Kahkeshan Hijazi is a Research Scientist at Section of Computational Biomedicine (CBM) Boston University Medical Center. Before this, she was serving as a Research Assistant Professor at Lahore University of Management Sciences (LUMS), Lahore, Pakistan. Prior to joining LUMS she served at the Research Center for Modeling and Simulation, National University of Sciences and Technology (NUST), Islamabad as Assistant Professor of Bioinformatics.  Dr. Hijazi obtained her Masters and PhD in Bioinformatics from Boston University, Massachusetts, USA in 2013 and 2014 respectively. Her research during her PhD was focused on developing predictors of tobacco-induced airway epithelial cell damage and the risk for having or developing tobacco-associated lung disease in humans at the Section of Computational Biomedicine at Boston University Medical Center (BUMC).  Dr. Hijazi has several awards and recognitions to her credit, some of which include: Dean list scholarship, gold medalist BS Bioinformatics, J. William Fulbright doctoral award, 2009 and a few research based awards. She has a few renowned publications to her name published in high impact journals such as Nature, Nature Scientific Reports, Am J Respir Crit Care Med and BMC Medicine. Her research interests include utilizing computational & statistical techniques for visualizing and analyzing transcriptomic data generated from high throughput technologies</td></tr>
+
+		</table>
+      </div>
+    </div>
+    
+    <div id="test3a-header" class="accordion_headings">Awards & Funding</div>
+    <div id="test3a-content">
+      <div class="accordion_child">
+        <h2>Regional Winner of Imagine Cup 2018</h2>
+        <p>MiCA won the regional competition of Imagine Cup 2018 organized by Microsoft Pakistan and Higher
+        Education Commission in May 2018. Imagine Cup 2018 Pakistan started with over 200 submissions initially, from which 110 projects were selected for further evaluation across Pakistan. 25 projects were selected for National Finals in Islamabad
+        and MiCA was selected as the regional winner from Lahore region.</p>
+        <h2>National Grassroots ICT 2017-2018 FYP Fund</h2>
+        <p>Ignite (National Technology Fund) sponsors hundreds of final year projects every year
+        across Pakistan to promote research and development of useful tools and technologies to support creativity and
+         innovation among undergraduate students. MiCA was successfully selected to receive a FYP fund of over 60,000 PKR to cover
+        development costs.</p>
+      </div>
+     
+    </div>
+	
+	<div id="test3z-header" class="accordion_headings">Publications</div>
+    <div id="test3z-content">
+      <div class="accordion_child">
+                <h2><a href="https://doi.org/10.1016/j.compbiomed.2019.103561">MiCA: An extended tool for microarray gene expression analysis</a></h2>
+                <p><b>For citation:</b> I. Sarfraz, M. Asif, and K. Hijazi, “MiCA: An extended tool for microarray gene expression analysis,” Comput. Biol. Med., p. 103561, Nov. 2019.</p>
+
+    </div>
+	
+	</div>
+    
+    
+    <div id="test3s-header" class="accordion_headings">System Requirements</div>
+    <div id="test3s-content">
+      <div class="accordion_child">
+        <p>MiCA uses a large number of published R libraries to support its backend processing & calculations
+        for analysis. Therefore, please make sure that <a href="https://cran.r-project.org/bin/windows/base/old/3.4.4/">R version 3.4.4</a> is installed before running the application.</p>
+         <ul>
+        <li>Microsoft Windows Operating System 7 or above</li>
+        <li>Dual core processor 1.6GHz+ (capable of running modern x64 applications)</li>
+        <li>1024 x 768 or above resolution</li>
+        <li>Minimum 4GB of memory (8GB recommended)</li>
+        <li>Minimum 100MB of disk space (1-2GB recommended for storing raw expression files)</li>
+        <li>Active internet connection</li>
+        <li>R version 3.4.4</li>
+                <li>RTools version 35</li>
+
+      </ul>
+      </div>
+     
+    </div>
+    
+    <div id="test3-header" class="accordion_headings">Downloads</div>
+    <div id="test3-content">
+      <div class="accordion_child">
+          <h2><b>MiCA v1.12 Complete Package (includes R 3.4.4, RTools 35 & R Libraries)</b></h2>
+        <ul>
+          <li><a href="downloads/MiCA_1_1_2_setup.exe">MiCA_1_1_2_setup.exe</a></li>
+        </ul>
+       
+        
+        <h2>User Manual</h2>
+        <ul>
+          <li><a href="downloads/MiCA_USER_MANUAL_1_2.pdf">MiCA_USER_MANUAL_1_2.pdf</a></li>
+        </ul>
+		
+	
+
+      </div>
+    </div>
+	
+    <div id="test4-header" class="accordion_headings">Contact Us</div>
+    <div id="test4-content">
+      <div class="accordion_child">
+        <p><b>Irzam Sarfraz</b>
+		</br>Department of Computer Science
+		</br>National Textile University
+		</br>Faisalabad, Pakistan</p>
+
+
+				
+				<p>Email: <a href="mailto: irzam9095@gmail.com">irzam9095@gmail.com</a></p>
+        
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p><a href="http://ntu.edu.pk/dcs.php">&copy; DEPARTMENT OF COMPUTER SCIENCE (NATIONAL TEXTILE UNIVERSITY)</a> | <a href="http://www.html5webtemplates.co.uk">Free CSS Templates</a>| Last Updated: 05 March 2020</p>
+  </div>
 </body>
 </html>
